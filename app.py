@@ -437,9 +437,9 @@ def open_apps(*args: tuple):
     """
     """
     openning = " ".join(args[0])
-    app_url = r"D:\\Programs\\Microsoft VS Code\\Code.exe"
+
     if openning == 'код':
-        os.startfile(app_url)
+        os.startfile(r"D:\\Programs\\Microsoft VS Code\\Code.exe")
         play_voice_assistant_speech(translator.get("I open VS Code"))
     elif openning == 'youtube':
         webbrowser.get().open("https://www.youtube.com")
@@ -504,8 +504,8 @@ config = {
                          "toss coin", "coin", "flip a coin"],
             "responses": toss_coin 
         },
-        "code": {
-            "examples": ["геннадий",
+        "open_apps": {
+            "examples": ["геннадий", "пиздец", "запускай",
                          "bro"],
             "responses": open_apps
         }
@@ -566,7 +566,7 @@ def make_preparations():
     # настройка данных пользователя
     person = OwnerPerson()
     person.name = "Tanya"
-    person.home_city = "Yekaterinburg"
+    person.home_city = "Kaluga"
     person.native_language = "ru"
     person.target_language = "en"
 
