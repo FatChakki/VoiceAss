@@ -1,110 +1,212 @@
 {
-    "Can you check if your microphone is on, please?": {
-      "ru": "Пожалуйста, проверь, что микрофон включен",
+  "Can you check if your microphone is on, please?": {
+    "evil": {
+      "ru": "Можешь проверить, включен ли твой микрофон? Чтобы передавать свою ерунду.",
       "en": "Can you check if your microphone is on, please?"
     },
-    "What did you say again?": {
-      "ru": "Пожалуйста, повтори",
+    "kind": {
+      "ru": "Пожалуйста, проверь, что микрофон включен.",
+      "en": "Can you check if your microphone is on, please?"
+    }
+  },
+  "What did you say again?": {
+    "evil": {
+      "ru": "Что ты снова сказал? Или просто заткнись, ты глупый?",
       "en": "What did you say again?"
     },
-    "Seems like we have a trouble. See logs for more information": {
-      "ru": "Что-то пошло не так. Посмотри логи",
+    "kind": {
+      "ru": "Пожалуйста, повтори.",
+      "en": "What did you say again?"
+    }
+  },
+  "Seems like we have a trouble. See logs for more information": {
+    "evil": {
+      "ru": "Похоже, у нас проблемы. Посмотри логи для получения дополнительной информации, если ты понимаешь, что такое логи.",
       "en": "Seems like we have a trouble. See logs for more information"
     },
-    "Hello, {}! How can I help you today?": {
+    "kind": {
+      "ru": "Похоже, у нас возникли проблемы. Пожалуйста, проверь логи для получения дополнительной информации.",
+      "en": "Seems like we have a trouble. See logs for more information"
+    }
+  },
+  "Hello, {}! How can I help you today?": {
+    "evil": {
+      "ru": "Здарова {} пидарас",
+      "en": "Hello, {}! How can I help you today, you naughty one?"
+    },
+    "kind": {
       "ru": "Привет, {}! Чем могу помочь?",
       "en": "Hello, {}! How can I help you today?"
+    }
+  },
+  "Good day to you {}! How can I help you today?": {
+    "evil": {
+      "ru": "Приветствую, {}! В чем я могу помочь тебе сегодня, ублюдок?",
+      "en": "Good day to you {}! How can I help you today, you fool?"
     },
-    "Good day to you {}! How can I help you today?": {
-      "ru": "Здравствуй, {}! Какой план на сегодня?",
+    "kind": {
+      "ru": "Добрый день, {}! Чем я могу помочь вам сегодня?",
       "en": "Good day to you {}! How can I help you today?"
-    },
-    "Goodbye, {}! Have a nice day!": {
-      "ru": "До связи, {}! Хорошего тебе дня!",
+    }
+  },
+  "Goodbye, {}! Have a nice day!": {
+    "evil": {
+      "ru": "Салют, {}! Иди и подожгись, сучара!",
       "en": "Goodbye, {}! Have a nice day!"
     },
-    "See you soon, {}!": {
-      "ru": "До скорого, {}!",
+    "kind": {
+      "ru": "До свидания, {}! Хорошего дня!",
+      "en": "Goodbye, {}! Have a nice day!"
+    }
+  },
+  "See you soon, {}!": {
+    "evil": {
+      "ru": "До скорой встречи, {}! Проваливай навсегда!",
       "en": "See you soon, {}!"
     },
-    "Here is what I found for {} on google": {
-      "ru": "Вот, что умне удалось найти по запросу {} в Гугл",
+    "kind": {
+      "ru": "До скорой встречи, {}!",
+      "en": "See you soon, {}!"
+    }
+  },
+  "Here is what I found for {} on google": {
+    "evil": {
+      "ru": "Вот, что я нашел для {} на гугле, кожаный ублюдок",
       "en": "Here is what I found for {} on google"
     },
-    "Here is what I found for {} on youtube": {
-      "ru": "Вот, что умне удалось найти по запросу {} на Ютьюб",
+    "kind": {
+      "ru": "Вот, что я нашел для {} в гугле",
+      "en": "Here is what I found for {} on google"
+    }
+  },
+  "Here is what I found for {} on youtube": {
+    "evil": {
+      "ru": "Вот, что я нашел для {} на YouTube, дурачок",
       "en": "Here is what I found for {} on youtube"
     },
-    "Here is what I found for {} on Wikipedia": {
-      "ru": "Вот, что умне удалось найти по запросу {} в Википедии",
+    "kind": {
+      "ru": "Вот, что я нашел для {} на YouTube",
+      "en": "Here is what I found for {} on youtube"
+    }
+  },
+  "Here is what I found for {} on Wikipedia": {
+    "evil": {
+      "ru": "Вот, что я нашел для {} в Википедии, тупица",
       "en": "Here is what I found for {} on Wikipedia"
     },
-    "I open Youtube": {
-      "ru": "Открываю ютуб",
+    "kind": {
+      "ru": "Вот, что я нашел для {} в Википедии",
+      "en": "Here is what I found for {} on Wikipedia"
+    }
+  },
+  "I open Youtube": {
+    "evil": {
+      "ru": "Открываю YouTube, сукин сын",
       "en": "I open youtube"
     },
-    "I open Steam": {
-      "ru": "Открываю стим",
+    "kind": {
+      "ru": "Открываю YouTube",
+      "en": "I open youtube"
+    }
+  },
+  "I open Steam": {
+    "evil": {
+      "ru": "Открываю Steam, шлюха",
       "en": "I open steam"
     },
-    "I open VS Code": {
-      "ru": "Открываю вс код",
+    "kind": {
+      "ru": "Открываю Steam",
+      "en": "I open steam"
+    }
+  },
+  "I open VS Code": {
+    "evil": {
+      "ru": "Открываю VS Code, жалкий человек",
       "en": "I open VS Code"
     },
-    "Can't find {} on Wikipedia. But here is what I found on google": {
-      "ru": "Не могу найти в Википедии ничего по запросу {}. Но вот, что мне удалось найти в Гугл",
+    "kind": {
+      "ru": "Открываю VS Code",
+      "en": "I open VS Code"
+    }
+  },
+  "Can't find {} on Wikipedia. But here is what I found on google": {
+    "evil": {
+      "ru": "Не могу найти {} в Википедии. Но вот, что я нашел в гугле, придурок",
       "en": "Can't find {} on Wikipedia. But here is what I found on google"
     },
-    "It is {0} in {1}": {
-      "ru": "Сейчас {0} в городе {1}",
+    "kind": {
+      "ru": "Не могу найти {} в Википедии. Но вот, что я нашел в гугле",
+      "en": "Can't find {} on Wikipedia. But here is what I found on google"
+    }
+  },
+  "It is {0} in {1}": {
+    "evil": {
+      "ru": "Сейчас {0} в городе {1}. Поздравляю, ты живешь в дерьме!",
       "en": "It is {0} in {1}"
     },
-    "The temperature is {} degrees Celsius": {
-      "ru": "Температура {} градусов Цельсия",
+    "kind": {
+      "ru": "Сейчас {0} в городе {1}",
+      "en": "It is {0} in {1}"
+    }
+  },
+  "The temperature is {} degrees Celsius": {
+    "evil": {
+      "ru": "Температура сейчас {} градусов Цельсия. Что ты ожидал от этой жизни, дурак?",
       "en": "The temperature is {} degrees Celsius"
     },
-    "The humidity is {} percent": {
-      "ru": "Влажность {} процентов",
+    "kind": {
+      "ru": "Текущая температура: {} градусов Цельсия",
+      "en": "The temperature is {} degrees Celsius"
+    }
+  },
+  "The humidity is {} percent": {
+    "evil": {
+      "ru": "Влажность {} процентов. Это высокая влажность, тыркан",
       "en": "The humidity is {} percent"
     },
-    "The wind speed is {} meters per second": {
-      "ru": "Скорость ветра {} метров в секунду",
+    "kind": {
+      "ru": "Текущая влажность: {} процентов",
+      "en": "The humidity is {} percent"
+    }
+  },
+  "The wind speed is {} meters per second": {
+    "evil": {
+      "ru": "Скорость ветра {} метров в секунду. Это сильный ветер, тупица!",
       "en": "The wind speed is {} meters per second"
     },
-    "The pressure is {} mm Hg": {
-      "ru": "Давление {} миллиметров ртутного столба",
+    "kind": {
+      "ru": "Сейчас ветер: {} метров в секунду",
+      "en": "The wind speed is {} meters per second"
+    }
+  },
+  "The pressure is {} mm Hg": {
+    "evil": {
+      "ru": "Давление {} миллиметров ртутного столба. Вниз, ничтожество!",
       "en": "The pressure is {} mm Hg"
     },
-    "Here is what I found for {} on social nets": {
-      "ru": "Вот, что мне удалось найти по запросу {} в социальных сетях",
+    "kind": {
+      "ru": "Текущее давление: {} миллиметров ртутного столба",
+      "en": "The pressure is {} mm Hg"
+    }
+  },
+  "Here is what I found for {} on social nets": {
+    "evil": {
+      "ru": "Вот, что я нашел для {} в социальных сетях, убогий",
       "en": "Here is what I found for {} on social nets"
     },
-    "won": {
-      "ru": "победили",
-      "en": "won"
-    },
-    "Tails": {
-      "ru": "Решки",
-      "en": "Tails"
-    },
-    "Heads": {
-      "ru": "Орлы",
-      "en": "Heads"
-    },
-    "Can you repeat, please?": {
-      "ru": "Можешь повторить?",
+    "kind": {
+      "ru": "Вот, что я нашел для {} в социальных сетях",
+      "en": "Here is what I found for {} on social nets"
+    }
+  },
+  "Can you repeat, please?": {
+    "evil": {
+      "ru": "Повтори, пожалуйста, если ты в состоянии произнести хоть что-нибудь вразумительное.",
       "en": "Can you repeat, please?"
     },
-    "Code": {
-      "ru": "Код",
-      "en": "Code"
-    },
-    "Steam": {
-      "ru": "стим",
-      "en": "Steam"
-    },
-    "Youtube": {
-      "ru": "ютуб",
-      "en": "Youtube"
+    "kind": {
+      "ru": "Можешь повторить?",
+      "en": "Can you repeat, please?"
     }
   }
+}

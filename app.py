@@ -30,12 +30,12 @@ class Translation:
 
     def get(self, text: str):
         """
-        Получение перевода строки из файла на нужный язык (по его коду)
+        Получение перевода строки из файла на нужный язык (по его коду) и с учетом вариации
         :param text: текст, который требуется перевести
         :return: вшитый в приложение перевод текста
         """
         if text in self.translations:
-            return self.translations[text][assistant.speech_language]
+            return self.translations[text][assistant.mode][assistant.speech_language]
         else:
             # в случае отсутствия перевода происходит вывод сообщения об этом в логах и возврат исходного текста
             print(colored("Not translated phrase: {}".format(text), "red"))
@@ -62,6 +62,7 @@ class VoiceAssistant:
     sex = ""
     speech_language = ""
     recognition_language = ""
+    mode = ""
 
 
 def setup_assistant_voice():
@@ -185,6 +186,7 @@ def play_greetings(*args: tuple):
         translator.get("Good day to you {}! How can I help you today?").format(person.name)
     ]
     play_voice_assistant_speech(greetings[random.randint(0, len(greetings) - 1)])
+
 
 
 def play_farewell_and_quit(*args: tuple):
@@ -418,21 +420,6 @@ def run_person_through_social_nets_databases(*args: tuple):
     play_voice_assistant_speech(translator.get("Here is what I found for {} on social nets").format(google_search_term))
 
 
-def toss_coin(*args: tuple):
-    """
-    "Подбрасывание" монетки для выбора из 2 опций
-    """
-    flips_count, heads, tails = 3, 0, 0
-
-    for flip in range(flips_count):
-        if random.randint(0, 1) == 0:
-            heads += 1
-
-    tails = flips_count - heads
-    winner = "Tails" if tails > heads else "Heads"
-    play_voice_assistant_speech(translator.get(winner) + " " + translator.get("won"))
-
-
 def open_apps(*args: tuple):
     """
     """
@@ -479,7 +466,7 @@ config = {
                          "find on wikipedia", "find definition", "tell about"],
             "responses": search_for_definition_on_wikipedia
         },
-        "person_search": {
+        "person_search": {#хуйня бесполезная
             "examples": ["пробей имя", "найди человека",
                          "find on facebook", " find person", "run person", "search for person"],
             "responses": run_person_through_social_nets_databases
@@ -489,7 +476,7 @@ config = {
                          "weather forecast", "report weather"],
             "responses": get_weather_forecast
         },
-        "translation": {
+        "translation": {#хз мусор
             "examples": ["выполни перевод", "переведи", "найди перевод",
                          "translate", "find translation"],
             "responses": get_translation
@@ -498,11 +485,6 @@ config = {
             "examples": ["смени язык", "поменяй язык",
                          "change speech language", "language"],
             "responses": change_language
-        },
-        "toss_coin": {
-            "examples": ["подбрось монетку", "подкинь монетку",
-                         "toss coin", "coin", "flip a coin"],
-            "responses": toss_coin 
         },
         "open_apps": {
             "examples": ["геннадий", "пиздец", "запускай",
@@ -575,6 +557,7 @@ def make_preparations():
     assistant.name = "Alice"
     assistant.sex = "female"
     assistant.speech_language = "ru"
+    assistant.mode = "evil"
 
     # установка голоса по умолчанию
     setup_assistant_voice()
