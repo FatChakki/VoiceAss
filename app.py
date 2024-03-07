@@ -19,6 +19,7 @@ import json  # работа с json-файлами и json-строками
 import wave  # создание и чтение аудиофайлов формата wav
 import os  # работа с файловой системой
 import requests
+import quest
 
 
 class Translation:
@@ -27,6 +28,9 @@ class Translation:
     """
     with open("translations.json", "r", encoding="UTF-8") as file:
         translations = json.load(file)
+
+    with open("script.json", "r", encoding="UTF-8") as file:
+        script = json.load(file)
 
     def get(self, text: str):
         """
@@ -39,6 +43,16 @@ class Translation:
         else:
             # в случае отсутствия перевода происходит вывод сообщения об этом в логах и возврат исходного текста
             print(colored("Not translated phrase: {}".format(text), "red"))
+            return text
+        
+    def game(self, text: str):
+        """
+        """
+        print(colored(text, "red"))
+        if text in self.script:
+            return self.script[text]
+        else:
+            print(colored("Error", "red"))
             return text
 
 
@@ -438,6 +452,33 @@ def open_apps(*args: tuple):
         play_voice_assistant_speech('Ебу дал что-ли')
 
 
+def quest_game():
+    """
+    """
+    play_voice_assistant_speech(translator.get("Start quest"))
+    def display_location(location):
+        print(location["description"])
+
+    def handle_choice(location, choice):
+        if choice in location["choices"]:
+            outcome = location["choices"][choice]
+            print(outcome["description"])
+            if "location" in outcome:
+                return outcome["location"]
+            else:
+                return None
+        else:
+            print("Неправильный выбор!")
+            return handle_choice(location, input("Выберите действие: "))
+
+    current_location = "начало"
+    while current_location != "None":
+        display_location(translator.game(current_location))
+        choice = input("Выберите действие: ")
+        current_location = handle_choice(translator.game(current_location), choice)
+    play_voice_assistant_speech(translator.get("It's over"))
+
+
 # перечень команд для использования в виде JSON-объекта
 config = {
     "intents": {
@@ -490,6 +531,11 @@ config = {
             "examples": ["геннадий", "пиздец", "запускай",
                          "bro"],
             "responses": open_apps
+        },
+        "quest": {
+            "examples": ["квест", "игра", "дай поиграть"
+                         "quest"],
+            "responses": quest_game
         }
     },
 

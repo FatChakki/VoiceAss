@@ -208,5 +208,25 @@
       "ru": "Можешь повторить?",
       "en": "Can you repeat, please?"
     }
+  },
+  "Start quest": {
+    "evil": {
+      "ru": "Игра начинается",
+      "en": "Start quest"
+    },
+    "kind": {
+      "ru": "Ну чтож начнём",
+      "en": "Start quest"
+    }
+  },
+  "It's over": {
+    "evil": {
+      "ru": "На этом у меня всё",
+      "en": "Can you repeat, please?"
+    },
+    "kind": {
+      "ru": "Пока, что на это всё",
+      "en": "It's over"
+    }
   }
 }
